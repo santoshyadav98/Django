@@ -1,0 +1,21 @@
+
+<html>
+    <head>
+        <title> input page</title>
+    </head>
+    <body bgcolor='blue'>  
+        <center>
+        <form action='add', method='post'>
+            {% csrf_token %}
+        Enter the first number:<input type="text" name="t1"><br>
+        Enter the Second number:<input type="text" name="t2"><br>
+        <input type="submit" value="add" name="operation"><br>
+        <input type="submit" value="sub" name="operation"><br>
+        <input type="submit" value="mul" name="operation"><br>
+        <input type="submit" value="div" name="operation"><br>
+        </form>
+    </center>
+    </body>
+<html>
+
+    

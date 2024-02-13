@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            amazon product display page 
+        </title>
+    </head>
+    <body bgcolor="pink" align="center"><table border='1'>
+        
+        <tr><th>pid</th><th>pname</th><th>pcost</th>
+            <th>pmfdt</th><th>pexpdt</th>
+            {% for rec in record %}
+            <tr><td>{{rec.pid}}</td><td>{{rec.pname}}</td>
+                <td>{{rec.pcost}}</td><td>{{rec.pmfdt}}</td><td>{{rec.pexpdt}}</td>
+           
+        {% endfor %}
+    </table>
+    </body>
+    </html>
+    

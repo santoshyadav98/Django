@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>project5</title>
+    </head>
+    <body align='center'>
+        <form action='add' method='post'>
+            {% csrf_token %}
+        Enter the first number:<input type="text" name="t1">
+        Enter the first number:<input type="text" name="t2">
+        <input type="submit" value="add" name="add">
+        
+        </form>
+    </body>
+</html>
+

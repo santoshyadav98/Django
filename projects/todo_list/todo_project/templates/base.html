@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Django To-do Lists</title>
+    <style>
+           
+        center{
+            padding:50px;
+            border:10px;
+            border-style:ridge;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 450px;
+            margin-left:350px;
+            align:center;}
+        
+        
+      
+        input[type="submit"]{
+            color:white     ;
+            padding:10px;
+            align=left;
+            
+            background-color:green;
+        }
+        
+        button{
+            color:white     ;
+            background-color:green;
+        }
+        h1{
+            padding:10px;
+            
+            margin-bottom:10px;
+        }
+        body {
+            background-color: pink;
+          }
+    </style>
+</head>
+
+<body>
+    <div><header>
+        <h1 onclick="location.href='{% url "index" %}'">
+            Django To-do Lists
+        </h1></header>
+    </div>
+    <div>
+        {% block content %}
+        This content will be replaced by different html code for each page.
+        {% endblock %}
+    </div>
+</body>
+
+</html>
